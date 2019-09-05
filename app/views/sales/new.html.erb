@@ -1,0 +1,17 @@
+<h1>Formulario</h1>
+<p></p>
+
+
+<%= form_with model: Sale.new, local: true do |form| %>
+<%= form.label :cod%>
+<%= form.number_field :cod%>
+<%= form.label :detail%>
+<%= form.text_area :detail%>
+<%= form.label :category%>
+<%= form.number_field :category%>
+<%= form.number_field :value%>
+<%= form.number_field :discount%>
+<%= form.number_field :tax%>
+<%= form.number_field :discount  %>
+<%= form.submit "Crear" %>
+<% end %>
